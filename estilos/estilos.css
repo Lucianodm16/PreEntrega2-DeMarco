@@ -1,0 +1,268 @@
+/* Estilos Generales */
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    /*Reset de CSS*/
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Titulo h1 y body */
+.titulo_inicial{
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    text-decoration: underline;
+}
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  background-color: #f4f4f4; 
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+}
+/* Estilos barra de navegacion */
+.navbar {
+    background-color: #8a2be2;
+    display: flex;
+    justify-content: center; /* centra el ul dentro del nav */
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar li {
+    margin: 0;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #000000;
+    padding: 15px 20px;
+    display: block;
+}
+
+/* Estilos footer */
+.footerConteiner {
+  background-color: black;
+  padding: 1rem 2rem; /* menos padding vertical para móvil */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  position: relative;
+  /* eliminar height fijo para que se adapte */
+  height: auto;
+  flex-wrap: wrap; /* para que los elementos puedan bajar de línea si es necesario */
+  gap: 0.5rem; /* espacio entre texto e íconos */
+}
+
+.footerConteiner p {
+  flex: 1 1 100%; /* ocupa todo el ancho */
+  font-size: 1rem;
+  text-align: center;
+  margin: 0;
+  z-index: 1;
+}
+
+.iconos-footer {
+  position: static; /* sacar posición absoluta para que fluya en el flex */
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex: 1 1 100%; /* ocupa todo el ancho y se coloca debajo del texto */
+}
+
+/* Íconos */
+.redes {
+  color: white;
+  font-size: 2rem;
+  transition: color 0.3s;
+}
+
+.redes:hover {
+  color: #1877f2;
+}
+
+
+/* Estilos Index */
+.contenedor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+}
+
+/* Secciones de texto */
+.texto {
+    width: 100%;
+}
+
+/* Línea horizontal entre secciones de texto */
+.linea {
+    width: 100%;
+    height: 2px;
+    background-color: black;
+    border: none;
+    margin: 0.5rem 0;
+}
+.seccion_inicio{
+    margin: 10px;
+}
+/* Imagen responsive */
+.img_inicio {
+    width: 100%;
+    margin-top: 1rem;
+}
+
+.img_inicio img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+
+/* Estilos Productos */
+.subtituloProducto {
+  text-align: center;
+  margin: 1rem 0;
+}
+
+.productosGridContainer {
+  display: grid;
+  grid-template-columns: 1fr; /* auto por fila */
+  gap: 1.5rem;
+  padding: 1rem;
+}
+
+.productosGridContainer__section {
+  border: 1px solid #ccc;
+  padding: 1rem;
+  text-align: center;
+  background-color: #fff;
+  border-radius: 8px;
+}
+
+.productosGridContainer__img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+/* ESTILOS PRODUCTO BOTON */
+.productosGridContainer__button {
+    display: inline-block;
+    margin-top: 0.5rem;
+    padding: 0.5rem 1rem;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+.productosGridContainer__button:hover {
+    background-color: #0056b3; /* Un azul más oscuro */
+}
+
+/* Seccion imagenes */
+.img_inicio {
+    flex: 1;
+    padding-left: 1rem;
+}
+.imagen {
+    display: block;
+    margin-left: auto;
+    margin-right: 0;
+    width: 35rem;
+    height: 24rem;
+    object-fit: cover; 
+}
+/* Estilos Blog */
+.blog-post{
+    margin-top: 40px;
+}
+/* Estilos Financiación */
+.metodos-pago {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+.metodos-pago li{
+    margin-bottom: 10px;
+}
+.metodos-pago li ul {
+  list-style-type: circle;
+  padding-left: 20px;
+}
+/* Estilos Contacto */
+.seccionContacto{
+    margin-top: 20px;
+}
+
+
+/* tamaño Desktop */
+@media (min-width: 1024px){
+    .navbar ul{
+        flex-direction: row;
+        gap: 2rem;
+    }
+    .contenedor {
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: center;
+        gap: 2rem;
+    }
+
+    .texto {
+        width: 50%;
+    }
+
+    .img_inicio {
+        width: 50%;
+    }
+
+    /* Estilo Producto Tablet */
+    .productosGridContainer{
+        grid-template-columns: repeat(3,1fr);
+        padding: 2rem;
+    }
+
+    /* Section */
+    .productosGridContainer__section{ 
+        max-width: 20rem;
+        margin: 0 auto;
+    }
+
+    .seccion_inicio{
+        margin: 40px;
+    }
+
+
+    /* ESTILOS FOOTER DESKTOP */
+    .footerConteiner {
+        flex-direction: column;
+        padding: 1.5rem;
+        gap: 1rem;
+        height: auto;
+    }
+
+    .footerConteiner p, .iconos-footer {
+        flex: none;
+        width: 100%;
+    }
+    .iconos-footer {
+        justify-content: center;
+    }
+}
