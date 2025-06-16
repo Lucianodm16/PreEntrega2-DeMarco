@@ -1,0 +1,5 @@
+//Mixin
+@mixin indexContainer($direction, $items){
+    flex-direction: $direction;
+    align-items: $items;
+}

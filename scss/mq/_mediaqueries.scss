@@ -1,0 +1,54 @@
+/* tamaño Desktop */
+@media (min-width: 1024px){
+    .navbar ul{
+        flex-direction: row;
+        gap: 2rem;
+    }
+    .contenedor {
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: center;
+        gap: 2rem;
+    }
+
+    .texto {
+        width: 50%;
+    }
+
+    .img_inicio {
+        width: 50%;
+    }
+
+    /* Estilo Producto Tablet */
+    .productosGridContainer{
+        grid-template-columns: repeat(3,1fr);
+        padding: 2rem;
+    }
+
+    /* Section */
+    .productosGridContainer__section{ 
+        max-width: 20rem;
+        margin: 0 auto;
+    }
+
+    .seccion_inicio{
+        margin: 40px;
+    }
+
+
+    /* ESTILOS FOOTER DESKTOP */
+    .footerConteiner {
+        flex-direction: column;
+        padding: 1.5rem;
+        gap: 1rem;
+        height: auto;
+    }
+
+    .footerConteiner p, .iconos-footer {
+        flex: none;
+        width: 100%;
+    }
+    .iconos-footer {
+        justify-content: center;
+    }
+}

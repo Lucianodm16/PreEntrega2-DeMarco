@@ -1,0 +1,42 @@
+/* Estilos Productos */
+.subtituloProducto {
+  text-align: center;
+  margin: 1rem 0;
+}
+
+.productosGridContainer {
+  display: grid;
+  grid-template-columns: 1fr; /* auto por fila */
+  gap: 1.5rem;
+  padding: 1rem;
+}
+
+.productosGridContainer__section {
+  border: 1px solid #ccc;
+  padding: 1rem;
+  text-align: center;
+  background-color: $colorBlanco;
+  border-radius: 8px;
+}
+
+.productosGridContainer__img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+/* ESTILOS PRODUCTO BOTON */
+.productosGridContainer__button {
+    display: inline-block;
+    margin-top: 0.5rem;
+    padding: 0.5rem 1rem;
+    background-color: #007bff;
+    color: $colorBlanco;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+.productosGridContainer__button:hover {
+    background-color: #0056b3; /* Un azul más oscuro */
+}

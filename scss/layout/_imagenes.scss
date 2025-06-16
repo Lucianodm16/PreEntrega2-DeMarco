@@ -1,0 +1,13 @@
+/* Seccion imagenes */
+.img_inicio {
+    flex: 1;
+    padding-left: 1rem;
+}
+.imagen {
+    display: block;
+    margin-left: auto;
+    margin-right: 0;
+    width: 35rem;
+    height: 24rem;
+    object-fit: cover; 
+}

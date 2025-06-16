@@ -1,0 +1,25 @@
+/* Estilos barra de navegacion */
+.navbar {
+    background-color: #8a2be2;
+    display: flex;
+    justify-content: center; /* centra el ul dentro del nav */
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    @include indexContainer(column,center );
+    gap: 1rem;
+    @extend %marginYpadding;
+}
+
+.navbar li {
+    margin: 0;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: $colorNegro;
+    padding: 15px 20px;
+    display: block;
+}

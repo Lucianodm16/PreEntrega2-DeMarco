@@ -1,0 +1,39 @@
+/* Estilos footer */
+.footerConteiner {
+  background-color: $colorNegro;
+  padding: 1rem 2rem; /* menos padding vertical para móvil */
+  @extend %flexComponentesFooter;
+  color: $colorBlanco;
+  position: relative;
+  /* eliminar height fijo para que se adapte */
+  height: auto;
+  flex-wrap: wrap; /* para que los elementos puedan bajar de línea si es necesario */
+  gap: 0.5rem; /* espacio entre texto e íconos */
+}
+
+.footerConteiner p {
+  flex: 1 1 100%; /* ocupa todo el ancho */
+  font-size: 1rem;
+  text-align: center;
+  margin: 0;
+  z-index: 1;
+}
+
+.iconos-footer {
+  position: static; /* sacar posición absoluta para que fluya en el flex */
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex: 1 1 100%; /* ocupa todo el ancho y se coloca debajo del texto */
+}
+
+/* Íconos */
+.redes {
+  color: $colorBlanco;
+  font-size: 2rem;
+  transition: color 0.3s;
+}
+
+.redes:hover {
+  color: #1877f2;
+}

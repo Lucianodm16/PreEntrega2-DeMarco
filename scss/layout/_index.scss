@@ -1,0 +1,34 @@
+/* Estilos Index*/
+.contenedor {
+    display: flex;
+    @include indexContainer(column,center);
+    padding: 1rem;
+}
+
+/* Secciones de texto */
+.texto {
+    width: 100%;
+}
+
+/* Línea horizontal entre secciones de texto */
+.linea {
+    width: 100%;
+    height: 2px;
+    background-color: $colorNegro;
+    border: none;
+    margin: 0.5rem 0;
+}
+.seccion_inicio{
+    margin: 10px;
+}
+/* Imagen responsive */
+.img_inicio {
+    width: 100%;
+    margin-top: 1rem;
+}
+
+.img_inicio img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
