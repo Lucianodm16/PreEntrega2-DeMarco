@@ -158,8 +158,47 @@
 }
 
 /* Estilos Blog */
+.blog-posts {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  padding: 1rem;
+}
+
 .blog-post {
-  margin-top: 40px;
+  background-color: #ffffff;
+  padding: 1.5rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease-in-out;
+}
+
+.blog-post:hover {
+  transform: translateY(-5px);
+}
+
+.blog-post h2 {
+  font-size: 1.4rem;
+  margin-bottom: 0.5rem;
+}
+
+.blog-post .date {
+  font-size: 0.9rem;
+  color: #666;
+  margin-bottom: 0.8rem;
+}
+
+.blog-post a {
+  display: inline-block;
+  margin-top: 0.8rem;
+  color: #8a2be2;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.blog-post a:hover {
+  text-decoration: underline;
 }
 
 /* Estilos Financiación */
